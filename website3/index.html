@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="jarallax.css">
     <link rel="stylesheet" href="audio.css">
     <link rel="stylesheet" href="blur.css">
+    <link rel="stylesheet" href="darkmode.css">
     
 </head>
 <body>
@@ -44,6 +45,11 @@
         </button>
         <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.05">
       </div>
+
+      <div id="brightnessControls">
+        <span id="brightnessText">☀</span>
+        <input type="range" id="brightnessSlider" min="20" max="100" value="100">
+    </div>
 
         <img src="./img/stars.png" id="stars1" class="scrolling-stars">
         <img src="./img/stars.png" id="stars2" class="scrolling-stars">
@@ -169,6 +175,7 @@
 <script src="jarallax.js"></script>
 <script src="jarallax-element.js"></script>
 <script src="audio.js"></script>
+<script src="brightnessdrag.js"></script>
 
 <script type="text/javascript">
     jarallax(document.querySelectorAll('.jarallax'), {
