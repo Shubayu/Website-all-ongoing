@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="gallery.css">
     <link rel="stylesheet" type="text/css" href="audio.css">
     <link rel="stylesheet" type="text/css" href="blur.css">
+    <link rel="stylesheet" type="text/css" href="darkmode.css">
 </head>
 <body>
    
@@ -40,14 +41,20 @@
     <img src="./img/UwUyoru_8.png" id="juwa">
     <img src="./img/bub2.png" id="shu">
     <h2 id="text">welcome</h2>
-    
 
     <audio id="audioPlayer" src="audio/cuteBgm.mp3" loop></audio>
         <div id="audioControls">
         <button id="toggleButton" class="play">
             <span id="toggleText">♫</span>
         </button>
-        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.03">
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.03">      
+</div>
+
+
+
+<div id="brightnessControls">
+    <span id="brightnessText">☀</span>
+    <input type="range" id="brightnessSlider" min="20" max="100" value="100">
 </div>
 
 
@@ -185,6 +192,7 @@ class="section2">
 <script src="bilder.js"></script>
 <script src="audio.js"></script>
 <script src="blur.js"></script>
+<script src="brightnessdrag.js"></script>
         
 
 <div class="cursor-blur"></div>
