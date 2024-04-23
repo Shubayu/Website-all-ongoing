@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="audio.css">
     <link rel="stylesheet" type="text/css" href="blur.css">
+    <link rel="stylesheet" type="text/css" href="darkmode.css">
 </head>
 <body>
     
@@ -29,12 +30,19 @@
 
 <section class="section1">
     <img src="img/room3.jpg" id="bgp">
+   
     <audio id="audioPlayer" src="audio/nightTheme.mp3" loop></audio>
         <div id="audioControls">
         <button id="toggleButton" class="play">
             <span id="toggleText">♫</span>
         </button>
-        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.1"></div>        
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.1"></div> 
+
+        <div id="brightnessControls">
+            <span id="brightnessText">☀</span>
+            <input type="range" id="brightnessSlider" min="20" max="100" value="100">
+        </div>
+               
         <div class="games">
          <ul>
             <li class="list-items1"><a href="../retrofight/index.html" target="_blank"><img src="img/SF1.png" width="110px" height="70px" id="img1"></a></li>
@@ -53,6 +61,9 @@
     <script src="index.js"></script>
     <script src="audio.js"></script>
     <script src="blur.js"></script>
+    <script src="brightnessdrag.js"></script>
+
+
     <div class="cursor-blur"></div>
 </body>
 </html>
